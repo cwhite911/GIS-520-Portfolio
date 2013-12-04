@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GIS 520 Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../GIS-520-Portfolio/css/bootstrap.css" rel="stylesheet">
+    <link href="../GIS-520-Portfolio/css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+   
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../GIS-520-Portfolio/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="brand" href="../GIS-520-Portfolio/index.html">GIS 520 Portfolio</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="../GIS-520-Portfolio/index.html">Home</a></li>
+              <li><a href="../GIS-520-Portfolio/about.html">About</a></li>
+              <li><a href="../GIS-520-Portfolio/contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav pull-right">
+            <li class="active"><a href="http://ncsu.edu/" target="_blank">NCSU</a></li>
+            <li><a href="http://gis.ncsu.edu/academic/courses/generic_syllabi/gis520_syllabus_spring2011.php" target="_blank">GIS 520</a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Geospatial Data Issues</li>
+              <li><a href="../GIS-520-Portfolio/3.html">Turning Data into Information Using ArcGIS 10</a></li>
+              <li><a href="../GIS-520-Portfolio/4.html">Geocoding Tabular Data</a></li>
+              <li><a href="../GIS-520-Portfolio/5.html">AutoCAD Integration</a></li>
+              <li class="nav-header">Geospatial Analytics with Vector Data</li>
+              <li><a href="../GIS-520-Portfolio/6.html">Data Cardinality</a></li>
+              <li><a href="../GIS-520-Portfolio/7.html">US Census Data</a></li>
+              <li><a href="../GIS-520-Portfolio/8.html">Linear Referencing</a></li>
+              <li><a href="../GIS-520-Portfolio/9.html">Spatial Statistics</a></li>
+              <li class="nav-header">Geospatial Analytics with Raster Data</li>
+              <li><a href="../GIS-520-Portfolio/10.html">Using Raster Data for Site Selection</a></li>
+              <li><a href="../GIS-520-Portfolio/11.html">Suitability Analysis and Weighted Overlay</a></li>
+              <li><a href="../GIS-520-Portfolio/12.html">Image Classification</a></li>
+              <li class="nav-header">Customization</li>
+              <li><a href="../GIS-520-Portfolio/13.html">Elementary Customization for ArcMap</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h2>AutoCAD Integration</h2>
+            <p>Assignment 5: AutoCAD Integration<br /><small>This exersice focuses on georeferencing a CAD .dwg file into ArcMap 10.1 using aerial photography.</small></p>
+               
+        <ul class="nav nav-pills">
+    		<li class="active"><a href="#p">Problem</a></li>
+   			 <li><a href="#ap">Analysis Procedures</a></li>
+             <li><a href="#r">Results</a></li>
+             <li><a href="#ar">Application &amp; Reflection</a></li>
+    	</ul>
+            
+          </div>
+             <div class="row-fluid">
+            <div class="span12">
+            	    <dl>
+            	    	<div id="p"></d>
+            	    	<br>
+            	    	<hr class="featurette-divider">
+    					<dt><h2><strong>Problem:</strong></h2></dt>
+    					<dd>The problem presented in assignment 5 is to georeference scaled CAD data and create a geodatabase from its contents.</dd>
+    					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="ap">
+    					<hr class="featurette-divider">
+    					<dt ><h2><strong>Analysis Procedures:</strong></h2></dt>
+    					<dd>The <em class="text-info">strategies</em> used to take CAD data and use it in ArcMap require the data to be georeferenced and</dd>
+              <dd>converted to a geodatabase. Orthophotography will be used to georeference the data and conversion tools from the ArcGIS toolbox will</dd>
+              <dd>be used to convert the data to more manageable types within ArcMap.</dd>
+    					<br>
+    					<dd>To create a geodatabase from scaled CAD data, the first step is to add the CAD drawing file and projected orthophotography to ArcMap.</dd>
+              <dd>From here the georeferencing tool can be used to to align the CAD drawing to features shown in the orthophotography. Once proper alignment</dd>
+              <dd>is made between the CAD drawing and orthophotography the georeferencing can be updated, creating a world file assoicated to the CAD drawing.</dd>
+              <dd>Now, a conversion tool  called CAD to Geodatabase can be used to create a projected version of the CAD drawing in a file geodatabase separating</dd>
+              <dd>the different geometry types into a new feature dataset. Check that both the line and polyline feature classes for inconsistancies. If polygons do</dd>
+              <dd>not exisit where the lines represent them, use the feature to polygon tool to correct the issue. Now that the data is properly prepared, the CAD</dd>
+              <dd>geodatabase can be sorted as needed using the feature class to feature class tool. Querys can be defined within the tool to separate the data as needed.</dd>
+              <dd>Figure 1 is a visual representation of this process.</dd>
+    					<br>
+    					<dt><h3 class="muted">Figure 1.</h3></dt>
+    					<dd><img class="img-rounded" src="../GIS-520-Portfolio/img/Diagram.JPG"/></dd>
+    					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="r">
+    					<hr class="featurette-divider">
+    					<dt><h2><strong>Results:</strong></h2></dt>
+              <dd><h3 class="muted">Map</h3></dd>
+    					<dd><img class="img-rounded" src="../GIS-520-Portfolio/img/NCST_Masterplan05.jpg"/></dd>
+              <dd><h3 class="muted">Geodatabase</h3></dd>
+              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/gdex5.PNG"/></dd>
+              <br>
+              <dd>Final geodatabase created from CAD file broken into sperate feature classes by layer.</dd>
+    					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="ar">
+    					<hr class="featurette-divider">
+    					<dt ><h2><strong>Application &amp; Reflection:</strong></h2></dt>
+    					<dd>Converting CAD data to usable GIS data is commonly used while working with municipalities. Water and sewer data</dd>
+              <dd>is generally added to a GIS database from engineers AS-Builts. These CAD files need to be properly georeferenced</dd>
+              <dd>and aligned to be viable in creating complex networks. The skills and techniques used in this exercise are useful</dd>
+              <dd>in understanding how to take a CAD dataset and extract the useful GIS data. However, in this example the data must</dd>
+              <dd>be properly connected to an existing dataset. If this is not done correctly, analysis of the system would not be possible.</dd>
+              <dd>The data must be connected properly to reflect the mains, laterals, valves, and other associated data to the new dataset.</dd>
+              <dd>Also, only the relevant attribute data must be carried over to the existing dataset. When all of this is completed, the new</dd>
+              <dd>water system data will be properly added into the existing water geodatabase.</dd>
+    				</dl>
+    				<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>             
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../GIS-520-Portfolio/js/jquery.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-transition.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-alert.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-modal.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-dropdown.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-scrollspy.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-tab.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-tooltip.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-popover.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-button.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-collapse.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-carousel.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
