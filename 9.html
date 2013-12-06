@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GIS 520 Porfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="../GIS-520-Portfolio/css/bootstrap.css" rel="stylesheet">
+    <link href="../GIS-520-Portfolio/css/bootstrap-responsive.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+
+      @media (max-width: 980px) {
+        /* Enable use of floated navbar text */
+        .navbar-text.pull-right {
+          float: none;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+      }
+    </style>
+   
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../GIS-520-Portfolio/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="brand" href="../GIS-520-Portfolio/index.html">GIS 520 Portfolio</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active"><a href="../GIS-520-Portfolio/index.html">Home</a></li>
+              <li><a href="../GIS-520-Portfolio/about.html">About</a></li>
+              <li><a href="../GIS-520-Portfolio/contact.html">Contact</a></li>
+            </ul>
+            <ul class="nav pull-right">
+            <li class="active"><a href="http://ncsu.edu/" target="_blank">NCSU</a></li>
+            <li><a href="http://gis.ncsu.edu/academic/courses/generic_syllabi/gis520_syllabus_spring2011.php" target="_blank">GIS 520</a></li>
+          </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">Geospatial Data Issues</li>
+              <li><a href="../GIS-520-Portfolio/3.html">Turning Data into Information Using ArcGIS 10</a></li>
+              <li><a href="../GIS-520-Portfolio/4.html">Geocoding Tabular Data</a></li>
+              <li><a href="../GIS-520-Portfolio/5.html">AutoCAD Integration</a></li>
+              <li class="nav-header">Geospatial Analytics with Vector Data</li>
+              <li><a href="../GIS-520-Portfolio/6.html">Data Cardinality</a></li>
+              <li><a href="../GIS-520-Portfolio/7.html">US Census Data</a></li>
+              <li><a href="../GIS-520-Portfolio/8.html">Linear Referencing</a></li>
+              <li><a href="../GIS-520-Portfolio/9.html">Spatial Statistics</a></li>
+              <li class="nav-header">Geospatial Analytics with Raster Data</li>
+              <li><a href="../GIS-520-Portfolio/10.html">Using Raster Data for Site Selection</a></li>
+              <li><a href="../GIS-520-Portfolio/11.html">Suitability Analysis and Weighted Overlay</a></li>
+              <li><a href="../GIS-520-Portfolio/12.html">Image Classification</a></li>
+              <li class="nav-header">Customization</li>
+              <li><a href="../GIS-520-Portfolio/13.html">Elementary Customization for ArcMap</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+        <div class="span9">
+          <div class="hero-unit">
+            <h2>Spatial Statistics</h2>
+            <p>Assignment 9: Spatial Statistics<br /><small>This exercise explores how to use event tables and route data.</small></p>
+               
+        <ul class="nav nav-pills">
+    		<li class="active"><a href="#p">Problem</a></li>
+   			 <li><a href="#ap">Analysis Procedures</a></li>
+             <li><a href="#r">Results</a></li>
+             <li><a href="#ar">Application &amp; Reflection</a></li>
+    	</ul>
+            
+          </div>
+             <div class="row-fluid">
+            <div class="span12">
+            	    <dl>
+            	    	<div id="p"></d>
+            	    	<br>
+            	    	<hr class="featurette-divider">
+    					<dt><h2><strong>Problem:</strong></h2></dt>
+    					<dd>Determine if false fire alarms show patterning, calculate the z-scores for calls for service-Jan07 using high/low clustering calculations, calculate </dd>
+              <dd>a K function index and confidence envelope to determine if the clustering is significant and determine, what distance the density of calls per block </dd>
+              <dd>cluster in February 2007 for the Fort Worth fire department, Battalion 2.</dd>
+    					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="ap">
+    					<hr class="featurette-divider">
+    					<dt ><h2><strong>Analysis Procedures:</strong></h2></dt>
+              <dd>The <em class="text-info">strategy</em> used to solve the last problem involves the Moran’s I function used in the spatial autocorrelation tool in ArcMap. </dd>
+              <dd>For the Moran’s I function to be applicable, the analytical goal must be to find clustering using both attribute values and the locations of the features. </dd>
+              <dd>The spatial data must also be polygons for the best results. A spatial join in ArcMap can be used to join point data to a grid (the grid cell size will influence the results).</dd>
+    					<br>
+    					<dd>Begin by preparing the data to be used by the spatial autocorrelation tool (Figure 1). To do this the point data must be spatially joined to a grid with predetermined</dd>
+              <dd>appropriate cell sizes. With the data now summarized in the polygon layer, a definition query can be used to only represent cells with a value greater than 0. The data</dd>
+              <dd>must now be run several times through the spatial autocorrelation tool, changing the distance band variable each time. Instead of individually running the tool each </dd>
+              <dd>time, python (arcpy) can be used to automate the process and also record the distance band, Z-score and confidence level in a table.</dd>
+    					<br>
+              <dd><h3 class="text-info">Code:</h3></dd>
+              <dd class="alert alert-info"># Replace a layer/table view name with a path to a dataset (which can be a layer file) or create the layer/table view within the script<br>
+              # The following inputs are layers or table views: "Calls_for_Service_Feb07_Grid200"<br><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","600","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","550","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","500","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","450","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","400","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","350","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","300","#")</strong><br>
+              <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","250","#")</strong><br>
+
+            </dd>
+
+    					<dt><h3 class="muted">Figure 1.</h3></dt>
+    					<dd><img class="img-rounded" src="http://www.gliffy.com/go/publish/image/5015831/L.png"/></dd>
+    					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="r">
+    					<hr class="featurette-divider">
+    					<dt ><h2><strong>Results:</strong></h2></dt>
+              <dd><h3 class="muted">Map 1</h3></dd>
+    					<dd><img class="img-rounded" src="../GIS-520-Portfolio/img/white_c_exercise8_1.jpg"/></dd>
+    					<br>
+              <dd>The reuslts of exersice shows the nearest neighbor index.</dd>
+              <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+              <dd><h3 class="muted">Map 2</h3></dd>
+              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/white_c_exercise8_2.jpg"/></dd>
+              <br>
+              <dd>The reuslts of exersice shows the nearest neighbor index.</dd>
+              <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+               <dd><h3 class="muted">Map 3</h3></dd>
+              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/white_c_exercise8_3.jpg"/></dd>
+              <br>
+              <dd>The reuslts of exersice shows the nearest neighbor index.</dd>
+              <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+               <dd><h3 class="muted">Map 4</h3></dd>
+              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/white_c_exercise8_4.jpg"/></dd>
+              <br>
+              <dd>The reuslts of exersice shows the nearest neighbor index.</dd>
+              <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+    					<br id="ar">
+    					<hr class="featurette-divider">
+    					<dt ><h2><strong>Application &amp; Reflection:</strong></h2></dt>
+    					<dd>Spatial statistics are very important in GIS because they allow the user to be more confident in the results of their analysis and provide a mathematical basis for decision making. </dd>
+              <dd>Analysts generally do not make the decisions in an organization. However, they create and provide the information that the decision makers use. The use of spatial statistics gives </dd>
+              <dd>the GIS analyst two main advantages in the workplace. First, in situations where they apply the analyst can be confident in the accuracy of analysis. Second, it is very powerful way </dd>
+              <dd>to present data and back up decisions. A good example of how this could be applied is an archaeologist who did a field survey and wants to determine if an excavation should be started </dd>
+              <dd>in the survey area. Using spatial statistics the archaeologist can determine if the artifacts found were clustered, dispersed, or random. Having some type of confidence interval in hand </dd>
+              <dd>makes it much easier for the archaeologist to make a final decision on whether an excavation should be started. If the confidence interval strongly supports clustering, the data could be </dd>
+              <dd>used to help the archaeologist to find funding and support for the project.  </dd>
+    				</dl>
+    				<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+            </div><!--/span-->
+          </div><!--/row-->
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr>             
+
+      <footer>
+        <p>&copy; Company 2013</p>
+      </footer>
+
+    </div><!--/.fluid-container-->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../GIS-520-Portfolio/js/jquery.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-transition.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-alert.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-modal.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-dropdown.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-scrollspy.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-tab.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-tooltip.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-popover.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-button.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-collapse.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-carousel.js"></script>
+    <script src="../GIS-520-Portfolio/js/bootstrap-typeahead.js"></script>
+
+  </body>
+</html>
