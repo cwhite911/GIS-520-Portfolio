@@ -94,8 +94,8 @@
         </div><!--/span-->
         <div class="span9">
           <div class="hero-unit">
-            <h2 class='muted'>Geospatial Analytics with Raster Data</h2>
-            <p>Assignment 10: ESRI On-Line Course - Using Raster Data for Site Selection   <a href="../GIS-520-Portfolio/img/white_c_assignment10.pdf" class="btn btn-primary" target="_blank">View the Certificate &raquo;</a></p>
+            <h3 class='muted pull-right'>Geospatial Analytics with Raster Data</h3>
+            <h2>Assignment 10:<br> ESRI On-Line Course - Using Raster Data for Site Selection   <a href="../GIS-520-Portfolio/img/white_c_assignment10.pdf" class="btn btn-primary" target="_blank">View the Certificate &raquo;</a></h2>
             
                
         <ul class="nav nav-pills">
@@ -113,42 +113,27 @@
             	    	<br>
             	    	<hr class="featurette-divider">
     					<dt><h2><strong>Problem:</strong></h2></dt>
-    					<dd>The problem in this exercise is to use census table data (2010 North Carolina Buncombe County census tract table T54 Race) and join it</dd>
-              <dd>geographic data (USA Census Tract Boundaries), and then use field T054_004  (American Indian and Alaska Native alone) to create a map of</dd>
-              <dd>total population of American Indian by census tract.</dd>
+    					<dd>Model bald eagle habitat near Big Bear Lake in the San Bernardino National Forest using fuzzy overlay analysis.</dd>
     					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
     					<br id="ap">
     					<hr class="featurette-divider">
     					<dt ><h2><strong>Analysis Procedures:</strong></h2></dt>
-              <dd>The main <em class="text-info">strategy</em> used in the exercise is joining tables to geography. Both data sets must contain a unique identifier</dd>
-              <dd>field so they can be joined together in ArcMap. Sometimes the data needed to be prepared before it could be properly joined. Examples of this include </dd>
-              <dd>creating a new field of concatenated values or changing the data type. The other strategy used in this exercise is downloading data. Data can come from </dd>
-              <dd>a variety of sources, generally census.gov, but other sources are also available such as socialexplorer.com and arcgis.com. </dd>
-    					<br>
-    					<dd>Preparing census data for use can be troublesome, but the basic methods for taking raw census data and preparing it for GIS analysis is fairly straight</dd>
-              <dd>forward (Fig. 1). First, the data must be obtained from the US Census Burea or a variety of other sources. The data will be a table, ex. Census tract and</dd>
-              <dd>TIGER shapefile. Next, view both tables and identify which columns can be used to join the data together. Prepare each data set before the join, this can</dd>
-              <dd>include adding new fields, concatinating data, or changing the data type. Finally, the data can be joined together base on their unique ids</dd>
     					<br>
     					<dt><h3 class="muted">Figure 1.</h3></dt>
-    					<dd><img class="img-rounded" src="http://www.gliffy.com/go/publish/image/4971353/L.png"/></dd>
+    					<dd><img class="img-rounded" src="http://www.gliffy.com/go/publish/image/5181297/L.png"/></dd>
     					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
     					<br id="r">
     					<hr class="featurette-divider">
     					<dt><h2><strong>Results:</strong></h2></dt>
               <dd><h3 class="muted">Map 1</h3></dd>
-    					<dd><img class="img-rounded" src="../GIS-520-Portfolio/img/assignment7_map.jpg"/></dd>
+    					<dd><img class="img-rounded" src="../GIS-520-Portfolio/img/fuzzy.jpg"/></dd>
               <br>
-              <dd>This map shows census tracts by total population of American Indian and Alaska Natives in Buncombe County, NC.</dd>
+              <dd>The map shows in green where bald eagle habitat is most likely to be.</dd>
     					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
     					<br id="ar">
     					<hr class="featurette-divider">
     					<dt ><h2><strong>Application &amp; Reflection:</strong></h2></dt>
-    					<dd>Preparing census data for geospatial analysis is a tiresome task and can often become very confusing and complicated. The ability to properly prepare census</dd>
-              <dd>data is a valuable skill that all GIS analysts should have. However, the underlying skill set learned from census data is that database design, spatial or not,</dd>
-              <dd>needs to have fields with unique identifiers to be able to easily work together. For any project, database design should be planned from the beginning and not </dd>
-              <dd>as an afterthought. An example, although not as complex as census data, would be the data needed for a cemetery dataset. The project could include different </dd>
-              <dd>databases such as sections, lots, interments, ownership records. This data would be more valuable if they could be joined or related based on unique IDs. </dd>
+    					<dd>Fuzzy overlay analysis is a very useful tool when trying to determine sites that do not have fixed boundaries or are variable because of the unpredictability of natural phenomena. Another example of its use could be in predicting the location of archeological sites. People like animals of tend to prefer certain habitats depending on the locations conditions. To determine where people lived variables such as water, shelter, food and proximity to other known sites (villages, cities) could be used to help predict other locations. Using the same fuzzy membership techniques each of these variables could be given a fuzzy membership and then fuzzy overlay analysis could be performed.</dd>
     				</dl>
     				<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
             </div><!--/span-->
@@ -159,7 +144,10 @@
       <hr>             
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <address>
+                <strong>Corey White</strong><br>
+                <a href="mailto:#">ctwhite@ncsu.edu</a>
+            </address>
       </footer>
 
     </div><!--/.fluid-container-->
