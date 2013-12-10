@@ -91,14 +91,15 @@
         <div class="span9">
           <div class="hero-unit">
             <h2>Turning Data into Information Using ArcGIS 10</h2>
-            <p>Module 2: Cartography, Map Production, and Geovisualization<br /></p>
-            <p>Exercise: Simplify a line feature</p>
+            <p>Module 4: Transformations and Descriptive Summaries<br /></p>
+            <p>Exercise: Use and compare Inverse Distance Weighting (IDW) and Kriging</p>
              <ul class="nav nav-pills">
         <li class="active"><a href="#p">Problem</a></li>
          <li><a href="#ap">Analysis Procedures</a></li>
              <li><a href="#r">Results</a></li>
              <li><a href="#ar">Application &amp; Reflection</a></li>
       </ul>
+
             
           </div>
              <div class="row-fluid">
@@ -110,7 +111,7 @@
                     <hr class="featurette-divider">
               
               <dt><h2><strong>Problem:</strong></h2></dt>
-              <dd>The problem presented in the exercise “Simplify a line feature” is to take complex geometry of a coastline and simplify it.</dd>
+              <dd>Compare elevation surfaces that were created using Inverse Distance Weighting (IDW) and Kriging methods from the same set of sample points.</dd>
              
               
 
@@ -120,19 +121,23 @@
               <hr class="featurette-divider">
               <dt><h2><strong>Analysis Procedures:</strong></h2></dt>
               <dt><h3 class="muted">Methods.</h3></dt>
-              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/3mod2.png"/></dd>
+              <dd><img class="img-rounded" src="http://www.gliffy.com/go/publish/image/5180698/L.png"/></dd>
               <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
               <br id="r">
               <hr class="featurette-divider">
               <dt><h2><strong>Results:</strong></h2></dt>
-              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/GeneralizeFinalMap1.jpg"/></dd>
+              <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/3Interpolate1.jpg"/></dd>
               <br>
-              <dd>This map show the before and after coastlines.</dd>
+              <dd>This map compares the results of IDW interpolation with a full point sample and 95% of the same sample.</dd>
+              <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
+               <dd><img class="img-rounded" src="../GIS-520-Portfolio/img/3Interpolate2.jpg"/></dd>
+              <br>
+              <dd>This map compares the results of Kriging interpolation with a full point sample and 95% of the same sample.</dd>
               <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
               <br id="ar">
               <hr class="featurette-divider">
               <dt ><h2><strong>Application &amp; Reflection:</strong></h2></dt>
-              <dd>Simplify line tool can be used in many real world situations. One reason to use this kind of data manipulation is as shown in the coastline example an aesthetic issue. However, the other major reason to simplify geometry is file size and rendering speeds. In general objects such as coastlines can be simplified, unless they are the focus or an important element of the map where detail is the goal.</dd>
+              <dd>Interpolation is a commonly used method used in GIS. Another example of its use is determining rainfall amounts over an area. To perform this analysis different sample would be taken of the area of interest and then the samples would be run through the IDW or the Kriging process.</dd>
             </dl>
             <p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
             </div><!--/span-->
