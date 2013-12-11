@@ -112,23 +112,23 @@
             	    	<br>
             	    	<hr class="featurette-divider">
     					<dt><h2><strong>Problem:</strong></h2></dt>
-    					<dd>Determine if false fire alarms show patterning, calculate the z-scores for calls for service-Jan07 using high/low clustering calculations, calculate </dd>
-              <dd>a K function index and confidence envelope to determine if the clustering is significant and determine, what distance the density of calls per block </dd>
-              <dd>cluster in February 2007 for the Fort Worth fire department, Battalion 2.</dd>
+    					<dd>Determine if false fire alarms show patterning, calculate the z-scores for calls for service-Jan07 using high/low clustering calculations, calculate 
+             a K function index and confidence envelope to determine if the clustering is significant and determine, what distance the density of calls per block 
+             cluster in February 2007 for the Fort Worth fire department, Battalion 2.</dd>
     					<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
     					<br id="ap">
     					<hr class="featurette-divider">
     					<dt ><h2><strong>Analysis Procedures:</strong></h2></dt>
-              <dd>The <em class="text-info">strategy</em> used to solve the last problem involves the Moran’s I function used in the spatial autocorrelation tool in ArcMap. </dd>
-              <dd>For the Moran’s I function to be applicable, the analytical goal must be to find clustering using both attribute values and the locations of the features. </dd>
-              <dd>The spatial data must also be polygons for the best results. A spatial join in ArcMap can be used to join point data to a grid (the grid cell size will influence the results).</dd>
+              <dd>The <em class="text-info">strategy</em> used to solve the last problem involves the Moran’s I function used in the spatial autocorrelation tool in ArcMap. 
+             For the Moran’s I function to be applicable, the analytical goal must be to find clustering using both attribute values and the locations of the features. 
+             The spatial data must also be polygons for the best results. A spatial join in ArcMap can be used to join point data to a grid (the grid cell size will influence the results).</dd>
     					<br>
-    					<dd>Begin by preparing the data to be used by the spatial autocorrelation tool (Figure 1). To do this the point data must be spatially joined to a grid with predetermined</dd>
-              <dd>appropriate cell sizes. With the data now summarized in the polygon layer, a definition query can be used to only represent cells with a value greater than 0. The data</dd>
-              <dd>must now be run several times through the spatial autocorrelation tool, changing the distance band variable each time. Instead of individually running the tool each </dd>
-              <dd>time, python (arcpy) can be used to automate the process and also record the distance band, Z-score and confidence level in a table.</dd>
+    					<dd>Begin by preparing the data to be used by the spatial autocorrelation tool (Figure 1). To do this the point data must be spatially joined to a grid with predetermined
+             appropriate cell sizes. With the data now summarized in the polygon layer, a definition query can be used to only represent cells with a value greater than 0. The data
+             must now be run several times through the spatial autocorrelation tool, changing the distance band variable each time. Instead of individually running the tool each 
+             time, python (arcpy) can be used to automate the process and also record the distance band, Z-score and confidence level in a table.</dd>
     					<br>
-              <dd><h3 class="text-info">Code:</h3></dd>
+              <dd><h3 class="text-info">Code:</h3>
               <dd class="alert alert-info"># Replace a layer/table view name with a path to a dataset (which can be a layer file) or create the layer/table view within the script<br>
               # The following inputs are layers or table views: "Calls_for_Service_Feb07_Grid200"<br><br>
               <strong>arcpy.SpatialAutocorrelation_stats("Calls_for_Service_Feb07_Grid200","Count_","GENERATE_REPORT","ZONE_OF_INDIFFERENCE","EUCLIDEAN_DISTANCE","NONE","600","#")</strong><br>
@@ -171,13 +171,13 @@
     					<br id="ar">
     					<hr class="featurette-divider">
     					<dt ><h2><strong>Application &amp; Reflection:</strong></h2></dt>
-    					<dd>Spatial statistics are very important in GIS because they allow the user to be more confident in the results of their analysis and provide a mathematical basis for decision making. </dd>
-              <dd>Analysts generally do not make the decisions in an organization. However, they create and provide the information that the decision makers use. The use of spatial statistics gives </dd>
-              <dd>the GIS analyst two main advantages in the workplace. First, in situations where they apply the analyst can be confident in the accuracy of analysis. Second, it is very powerful way </dd>
-              <dd>to present data and back up decisions. A good example of how this could be applied is an archaeologist who did a field survey and wants to determine if an excavation should be started </dd>
-              <dd>in the survey area. Using spatial statistics the archaeologist can determine if the artifacts found were clustered, dispersed, or random. Having some type of confidence interval in hand </dd>
-              <dd>makes it much easier for the archaeologist to make a final decision on whether an excavation should be started. If the confidence interval strongly supports clustering, the data could be </dd>
-              <dd>used to help the archaeologist to find funding and support for the project.  </dd>
+    					<dd>Spatial statistics are very important in GIS because they allow the user to be more confident in the results of their analysis and provide a mathematical basis for decision making. 
+             Analysts generally do not make the decisions in an organization. However, they create and provide the information that the decision makers use. The use of spatial statistics gives 
+             the GIS analyst two main advantages in the workplace. First, in situations where they apply the analyst can be confident in the accuracy of analysis. Second, it is very powerful way 
+             to present data and back up decisions. A good example of how this could be applied is an archaeologist who did a field survey and wants to determine if an excavation should be started 
+             in the survey area. Using spatial statistics the archaeologist can determine if the artifacts found were clustered, dispersed, or random. Having some type of confidence interval in hand 
+             makes it much easier for the archaeologist to make a final decision on whether an excavation should be started. If the confidence interval strongly supports clustering, the data could be 
+             used to help the archaeologist to find funding and support for the project.  </dd>
     				</dl>
     				<p class="text-right"><a class="btn btn-primary" type="button" href="#">Return to Top</a></p>
             </div><!--/span-->
